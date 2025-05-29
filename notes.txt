@@ -1,0 +1,2 @@
+1) category of idea will be db only.
+2) forgot functionality on contract of adding a proposal by the entrepreneur
