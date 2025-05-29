@@ -7,6 +7,7 @@ export function ProfileDropdown() {
   const { disconnect } = useDisconnect();
 
   const logout = async () => {
+    console.log("disconnecting");
     await disconnect();
   };
   return (
@@ -14,7 +15,6 @@ export function ProfileDropdown() {
       <div className="container">
         <div className="row justify-content-center">
           <div className="col-md-6 d-flex justify-content-center">
-            {/* Wrap name and avatar together */}
             <div className="d-flex align-items-center gap-2">
               <span className="user-name mr-2">{userName}</span>
 
@@ -39,11 +39,11 @@ export function ProfileDropdown() {
                     {
                       icon: "fa fa-power-off",
                       label: "Log Out",
-                      _onClick: logout,
+                      _onClick: () => logout(),
                     },
                   ].map((item, i, _onClick) => (
                     <Dropdown.Item
-                      onClick={_onClick}
+                      onClick={async () => await _onClick}
                       key={i}
                       href="#"
                       className="d-flex align-items-center"
