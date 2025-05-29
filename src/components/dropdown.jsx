@@ -41,9 +41,9 @@ export function ProfileDropdown() {
                       label: "Log Out",
                       _onClick: () => logout(),
                     },
-                  ].map((item, i, _onClick) => (
+                  ].map((item, i) => (
                     <Dropdown.Item
-                      onClick={async () => await _onClick}
+                      onClick={item._onClick}
                       key={i}
                       href="#"
                       className="d-flex align-items-center"
