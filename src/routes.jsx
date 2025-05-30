@@ -3,7 +3,7 @@ import Home from "./pages/index";
 import About from "./pages/about";
 import CompanyOverview from "./pages/company-overview";
 import Contact from "./pages/contact";
-import Events from "./pages/events";
+import Dashboard from "./pages/dashboard";
 import Faq from "./pages/faq";
 // import ForgotPassword from "./pages/ForgotPassword";
 // import Login from "./pages/login";
@@ -23,7 +23,7 @@ const routes = [
   { path: "/about", Component: About },
   { path: "/company-overview", Component: CompanyOverview },
   { path: "/contact", Component: Contact },
-  { path: "/events", Component: Events },
+  { path: "/dashboard", Component: Dashboard },
   { path: "/faq", Component: Faq },
   //   { path: "/forgot-password", Component: ForgotPassword },
   // { path: "/login", Component: Login },

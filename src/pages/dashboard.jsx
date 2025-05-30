@@ -1,8 +1,8 @@
 import { Link } from "react-router-dom";
-import PageBanner from "../components//PageBanner";
+import PageBanner from "../components/PageBanner";
 import Layout from "../layouts/Layout";
 
-const Events = () => {
+const Dashboard = () => {
   return (
     <Layout>
       <PageBanner pageName="Events" />
@@ -238,8 +238,8 @@ const Events = () => {
               </div>
             </div>
             <div className="view-more-btn text-center mt-80">
-              <Link to="/events" className="main-btn bordered-btn">
-                View More Events <i className="far fa-arrow-right" />
+              <Link to="/dashboard" className="main-btn bordered-btn">
+                View More dashboard <i className="far fa-arrow-right" />
               </Link>
             </div>
           </div>
@@ -249,4 +249,4 @@ const Events = () => {
   );
 };
 
-export default Events;
+export default Dashboard;
