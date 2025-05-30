@@ -19,9 +19,12 @@ const Footer = ({ footerSolidBg }) => {
                 </h3>
               </div>
               <div className="col-lg-auto col-md-6">
-                <Link to="/contact" className="main-btn bordered-btn bordered-white mt-md-30">
-                    Promote Your Products <i className="far fa-arrow-right" />
-                  </Link>
+                <Link
+                  to="/contact"
+                  className="main-btn bordered-btn bordered-white mt-md-30"
+                >
+                  Promote Your Products <i className="far fa-arrow-right" />
+                </Link>
               </div>
             </div>
           </div>
@@ -35,7 +38,7 @@ const Footer = ({ footerSolidBg }) => {
               <div className="col-xl-3 col-lg-4 col-md-6">
                 <div className="widget about-widget">
                   <div className="footer-logo">
-                    <img src="assets/img/logo-white.png" alt="Funden" />
+                    <img src="assets/img/logo-white.png" alt="Sharki" />
                   </div>
                   <p>
                     Sed ut perspiciatis unde omn iste natus error sit voluptatem
@@ -108,7 +111,7 @@ const Footer = ({ footerSolidBg }) => {
                       </span>
                       <span className="info">
                         <span className="info-title">Phone Number</span>
-                        <a href="#">+012(345) 78 93</a>
+                        <a href="#">+92 318 9316752</a>
                       </span>
                     </li>
                     <li>
@@ -117,10 +120,10 @@ const Footer = ({ footerSolidBg }) => {
                       </span>
                       <span className="info">
                         <span className="info-title">Email Address</span>
-                        <a href="#">support@gmail.com</a>
+                        <a href="#">dev.umernisar@gmail.com</a>
                       </span>
                     </li>
-                    <li>
+                    {/* <li>
                       <span className="icon">
                         <i className="far fa-map-marker-alt" />
                       </span>
@@ -128,7 +131,7 @@ const Footer = ({ footerSolidBg }) => {
                         <span className="info-title">Locations</span>
                         <a href="#">59 Main Street, USA</a>
                       </span>
-                    </li>
+                    </li> */}
                   </ul>
                 </div>
               </div>
@@ -167,7 +170,7 @@ const Footer = ({ footerSolidBg }) => {
               </div>
               <div className="col-md-6">
                 <p className="copyright-text">
-                  © {new Date().getFullYear()} <a href="#">Funden</a>. All
+                  © {new Date().getFullYear()} <a href="#">Sharki</a>. All
                   Rights Reserved
                 </p>
               </div>
