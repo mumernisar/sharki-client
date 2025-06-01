@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 
-const WalletInfo = ({ pageName }) => {
+const WalletInfo = ({ pageName, setShowSurvey }) => {
   const [hidden, setHidden] = useState(true);
 
   const toggleHidden = () => {
@@ -21,7 +21,10 @@ const WalletInfo = ({ pageName }) => {
 
             <div className="col-md-6 col-12">
               <div className="d-flex flex-wrap justify-content-md-end">
-                <button className="btn btn-primary mr-2 mb-2">
+                <button
+                  className="btn btn-primary mr-2 mb-2"
+                  onClick={() => setShowSurvey(true)}
+                >
                   <i className="fa fa-plus mr-1"></i> Create Proposal
                 </button>
                 <button className="btn btn-outline-secondary mr-2 mb-2">

@@ -23,7 +23,7 @@ export default function Step1({ onNext }) {
 
   return (
     <div className="wizard-forms">
-      <div className="inner pb-100 clearfix">
+      <div className="inner clearfix">
         <div className="form-content pera-content">
           <div className="step-inner-content">
             <span className="step-no">Step 1</span>

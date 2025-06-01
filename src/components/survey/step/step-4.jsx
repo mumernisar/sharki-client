@@ -16,7 +16,7 @@ export default function Step4({ onNext, onBack }) {
 
   return (
     <div className="wizard-forms">
-      <div className="inner pb-100 clearfix">
+      <div className="inner clearfix">
         <div className="form-content pera-content">
           <div className="step-inner-content">
             <span className="step-no bottom-line">Step 4</span>
