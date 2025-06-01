@@ -14,8 +14,8 @@ import Project1 from "./pages/project-1";
 import Project2 from "./pages/project-2";
 import Project3 from "./pages/project-3";
 import ProjectDetails from "./pages/project-details";
-// import SignUpPage from "./pages/SignUpPage";
 import TeamMember from "./pages/team-member";
+import Survey from "./pages/survey/Survery";
 import Testimonial from "./pages/testimonial";
 
 const routes = [
@@ -34,7 +34,7 @@ const routes = [
   { path: "/project-2", Component: Project2 },
   { path: "/project-3", Component: Project3 },
   { path: "/project-details", Component: ProjectDetails },
-  //   { path: "/sign-up", Component: SignUpPage },
+  { path: "/survey", Component: Survey },
   { path: "/team-member", Component: TeamMember },
   { path: "/testimonial", Component: Testimonial },
 ];

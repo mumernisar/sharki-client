@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import PageBanner from "../components//PageBanner";
+import PageBanner from "../components/PageBanner";
 import Layout from "../layouts/Layout";
 const Testimonial = () => {
   return (

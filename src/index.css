@@ -15,8 +15,6 @@
 @import "./assets/css/main.css";
 /* <!--====== Responsive css ======--> */
 @import "./assets/css/responsive.css";
-/* <!--====== Login css ======--> */
-@import "./assets/css/login.css";
 
 @import url(https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900);
 
@@ -194,3 +192,310 @@ h5,
   width: max-content;
   display: inline-block;
 }
+
+/* ///////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////////////// */
+
+.table-responsive > div.dataTables_wrapper > div.row {
+  margin: 0;
+}
+
+.table-responsive .table {
+  color: #333; /* Replace with $brand-dark */
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+  border-color: #dee2e6; /* Replace with $border-color */
+  vertical-align: middle;
+}
+
+.table-responsive .table:not(caption) > * {
+  border-color: #dee2e6 !important; /* $border-color */
+}
+
+.table-responsive .table thead th {
+  border-bottom: 1px solid #dee2e6; /* $border-color */
+}
+
+.table-responsive .table thead th,
+.table-responsive .table tfoot th {
+  padding: 8px 15px;
+  color: #333; /* $brand-dark */
+  font-size: 10px; /* $font-10 */
+  font-weight: 700; /* $font-700 */
+  text-transform: uppercase; /* $font-uppercase */
+}
+
+.table-responsive .table thead th:first-child,
+.table-responsive .table tfoot th:first-child {
+  padding-left: 30px;
+}
+
+.table-responsive .table thead th:last-child,
+.table-responsive .table tfoot th:last-child {
+  padding-right: 30px;
+}
+
+.table-responsive .table tbody tr:last-child * {
+  border-bottom: transparent;
+}
+
+.table-responsive .table tr td {
+  padding: 15px 15px;
+  white-space: nowrap;
+  vertical-align: middle;
+}
+
+.table-responsive .table tr td:first-child {
+  padding-left: 30px;
+}
+
+.table-responsive .table tr td:last-child {
+  padding-right: 30px;
+}
+
+.table-responsive .table.table-dark {
+  border-color: #000 !important;
+}
+
+.table-responsive .table.table-dark tr,
+.table-responsive .table.table-dark td,
+.table-responsive .table.table-dark th {
+  color: #6c757d; /* $gray-600 */
+  border-color: #343a40; /* $dark */
+}
+
+.table-responsive .table.table-striped > tbody > tr:nth-of-type(odd) > *,
+.table-responsive .table.table-hover > tbody > tr:hover > * {
+  background-color: #f4f4f9; /* rgb(244 244 249) */
+}
+
+.table-responsive table.dataTable.table-hover > tbody > tr:hover > * {
+  box-shadow: none;
+  transition: all 0.3s ease;
+  background-color: #f8f9fa; /* lighten($gray-100, 1) */
+}
+
+.table-responsive table.dataTable tbody > tr.selected > * {
+  color: #212529; /* $dark */
+  box-shadow: inset 0 0 0 #eeeef5;
+}
+
+.table-responsive table.dataTable tbody > tr.selected > * a {
+  color: #212529;
+}
+
+.table-responsive div.dataTables_wrapper div.dataTables_filter input,
+.table-responsive div.dataTables_wrapper div.dataTables_length select {
+  padding: 8px 15px;
+}
+
+.table-responsive .dataTables_paginate .page-link {
+  color: #212529; /* $dark */
+  font-size: 12px; /* $font-12 */
+  box-shadow: none !important;
+  border-color: #d6d8db; /* darken($gray-100, 1) */
+}
+
+.table-responsive .dataTables_paginate .active > .page-link,
+.table-responsive .dataTables_paginate .page-link.active {
+  color: #fff !important;
+  background-color: #007bff; /* $primary */
+}
+
+.table-responsive .dataTables_paginate .disabled > .page-link,
+.table-responsive .dataTables_paginate .page-link.disabled {
+  color: #ced4da; /* $gray-400 */
+}
+
+.table-responsive div.dataTables_info {
+  font-size: 11px; /* $font-11 */
+}
+
+.table-responsive th .table-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.table-responsive th:last-child .table-head {
+  display: block;
+}
+
+/* Custom table adjustments */
+.proposal-table .table-responsive .table tbody tr:last-child * {
+  border-bottom: inherit;
+}
+
+.function-table .table-responsive .table thead th:last-child {
+  padding-right: 5px;
+}
+
+/* Custom checkbox styling */
+.custom-table-checkbox {
+  position: relative;
+  width: 18px;
+  height: 18px;
+  appearance: none;
+  background-color: #ecedf4;
+  border: 1px solid #e5e7eb;
+  border-radius: 4px;
+  cursor: pointer;
+  outline: none;
+}
+
+.custom-table-checkbox:focus {
+  border: 0;
+}
+
+.custom-table-checkbox:checked {
+  border-color: #007bff; /* $primary */
+  background-color: #007bff;
+}
+
+.custom-table-checkbox:checked::after {
+  content: url("/images/icons/check.png");
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+/*----------------------------------------------------------------
+  Widgets Tables
+----------------------------------------------------------------*/
+
+/* Tickets Widget */
+.widget-tickets-content .tickets-items-wrapper .table tr td .tickets-sort-desc {
+  opacity: 1;
+  visibility: visible;
+  transition: all 0.3s ease;
+}
+
+.widget-tickets-content
+  .tickets-items-wrapper
+  .table
+  tr
+  td
+  .tickets-list-action {
+  opacity: 0;
+  top: -33px;
+  padding-top: 5px;
+  visibility: hidden;
+  position: relative;
+  margin-bottom: -32px;
+  transition: all 0.3s ease;
+}
+
+.widget-tickets-content
+  .tickets-items-wrapper
+  .table
+  tr
+  td
+  .tickets-list-action
+  a {
+  font-size: 12px; /* Replace $font-12 */
+}
+
+.widget-tickets-content
+  .tickets-items-wrapper
+  .table
+  tr
+  td
+  .tickets-list-action
+  span {
+  color: #6c757d; /* Replace with $brand-muted */
+  font-size: 9px; /* Replace $font-9 */
+}
+
+.widget-tickets-content
+  .tickets-items-wrapper
+  .table
+  tr:hover
+  td
+  .tickets-sort-desc {
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+}
+
+.widget-tickets-content
+  .tickets-items-wrapper
+  .table
+  tr:hover
+  td
+  .tickets-list-action {
+  opacity: 1;
+  visibility: visible;
+  transition: all 0.3s ease;
+}
+
+/* Tasks Widget */
+.widget-tasks-content .tasks-items-wrapper .table tr td .tasks-sort-desc {
+  opacity: 1;
+  visibility: visible;
+  transition: all 0.3s ease;
+}
+
+.widget-tasks-content .tasks-items-wrapper .table tr td .tasks-list-action {
+  opacity: 0;
+  top: -40px;
+  padding-top: 5px;
+  visibility: hidden;
+  position: relative;
+  margin-bottom: -38px;
+  transition: all 0.3s ease;
+}
+
+.widget-tasks-content .tasks-items-wrapper .table tr td .tasks-list-action a {
+  font-size: 12px; /* Replace $font-12 */
+}
+
+.widget-tasks-content
+  .tasks-items-wrapper
+  .table
+  tr
+  td
+  .tasks-list-action
+  span {
+  color: #6c757d; /* Replace with $brand-muted */
+  font-size: 9px; /* Replace $font-9 */
+}
+
+.widget-tasks-content .tasks-items-wrapper .table tr:hover td .tasks-sort-desc {
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+}
+
+.widget-tasks-content
+  .tasks-items-wrapper
+  .table
+  tr:hover
+  td
+  .tasks-list-action {
+  opacity: 1;
+  visibility: visible;
+  transition: all 0.3s ease;
+}
+
+.hstack {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  align-self: stretch;
+}
+
+.gap-2 {
+    gap: 0.5rem !important;
+}
+

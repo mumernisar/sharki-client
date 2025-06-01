@@ -1,11 +1,15 @@
 import { Link } from "react-router-dom";
+import WalletInfo from "../components/WalletInfo";
 import PageBanner from "../components/PageBanner";
 import Layout from "../layouts/Layout";
+import Table from "./../components/table/Table";
 
 const Dashboard = () => {
   return (
     <Layout>
-      <PageBanner pageName="Events" />
+      <PageBanner pageName="Dashboard" />
+      <WalletInfo />
+      <Table />
       <section className="event-area section-gap-extra-bottom">
         <div className="container">
           <div className="event-items">
@@ -20,15 +24,9 @@ const Dashboard = () => {
               <div className="event-content">
                 <ul className="meta">
                   <li>
-                    <Link to="/project-1" className="category">
-                      Music Party
+                    <Link className="date category" aria-disabled>
+                      <i className="far fa-calendar-alt" /> 25 February 2021
                     </Link>
-                  </li>
-                  <li>
-                    <a href="#" className="date">
-                      <i className="fal fa-map-marker-alt" />
-                      25 Main Street ,New York
-                    </a>
                   </li>
                 </ul>
                 <h4 className="event-title">
@@ -38,9 +36,23 @@ const Dashboard = () => {
                 </h4>
                 <p>
                   Sed ut perspiciatis unde omnis iste natus error voluptatem
-                  accus laudantium totam rem aperiam eaque
+                  accus laudantium totam rem aperiam eaque . Sed ut perspiciatis
+                  unde omnis iste natus error voluptatem accus laudantium totam
+                  rem aperiam eaque
                 </p>
+                <div className="project-stats ">
+                  <div className="stats-value">
+                    <span className="value-title">
+                      Raised of <span className="value">$59,689</span>
+                    </span>
+                    <span className="stats-percentage">79%</span>
+                  </div>
+                  <div className="stats-bar" data-value={79}>
+                    <div className="bar-line" />
+                  </div>
+                </div>
               </div>
+
               <div className="event-button">
                 <Link to="/project-details" className="main-btn bordered-btn">
                   Join Event <i className="far fa-arrow-right" />

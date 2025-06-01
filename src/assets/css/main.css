@@ -1608,7 +1608,7 @@ a:hover {
 .page-title-area {
   position: relative;
   z-index: 1;
-  padding: 125px 0;
+  padding: 25px 0;
   background-image: url(../img/page-title.jpg);
   background-size: cover;
   background-position: center;
@@ -1622,7 +1622,7 @@ a:hover {
   width: 100%;
   height: 100%;
   z-index: -1;
-  background-color: var(--secondary-color);
+  background-color: #283c50;
   opacity: 0.9;
 }
 
@@ -3813,6 +3813,58 @@ a:hover {
 .event-items .single-event-item .event-content {
   padding: 0 120px 0 75px;
 }
+.event-items .single-event-item .event-content .project-stats {
+  margin-top: 1rem;
+  /* margin-bottom: 8rem; */
+}
+.event-items .single-event-item .event-content .stats-value {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  font-size: 16px;
+}
+
+.event-items .single-event-item .event-content .stats-value .value,
+.event-items .single-event-item .event-content .stats-percentage {
+  font-weight: 700;
+  color: var(--secondary-color);
+}
+
+.event-items .single-event-item .event-content .stats-bar {
+  width: 100%;
+  background: var(--white);
+  height: 3px;
+  margin-top: 8px;
+  position: relative;
+}
+
+.event-items .single-event-item .event-content .stats-bar .bar-line {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 0;
+  height: 100%;
+  -webkit-transition: width 2s ease-in-out;
+  -o-transition: width 2s ease-in-out;
+  transition: width 2s ease-in-out;
+  background-color: var(--primary-color);
+}
+
+.event-items .single-event-item .event-content .meta .date {
+  margin-top: 20px;
+  width: max-content;
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--white);
+}
+
+.event-items .single-event-item .event-content .meta .date i {
+  color: var(--white);
+  margin-right: 8px;
+}
 
 .event-items .single-event-item .meta {
   display: -webkit-box;
@@ -3850,10 +3902,6 @@ a:hover {
   margin-right: 10px;
   font-size: 18px;
   color: var(--secondary-color);
-}
-
-.event-items .single-event-item .meta .date:hover {
-  color: var(--primary-color);
 }
 
 .event-items .single-event-item .event-title {

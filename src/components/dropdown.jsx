@@ -36,6 +36,8 @@ export function ProfileDropdown() {
                     },
 
                     { icon: "fa fa-cog", label: "Profile", _onClick: () => {} },
+                    { icon: "fa fa-comment-dots", label: "Messages", _onClick: () => {} },
+
                     {
                       icon: "fa fa-power-off",
                       label: "Log Out",

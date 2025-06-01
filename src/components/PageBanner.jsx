@@ -10,9 +10,9 @@ const PageBanner = ({ pageName }) => {
           <div className="col-auto">
             <ul className="page-breadcrumb">
               <li>
-                <Link href="/">Home</Link>
+                <Link to="/">Home</Link>
               </li>
-              <li>{pageName}</li>
+              <li className="text-muted">{pageName}</li>
             </ul>
           </div>
         </div>
