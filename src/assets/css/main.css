@@ -4389,7 +4389,7 @@ a:hover {
   transform: translate(-50%, -50%);
   width: 75px;
   height: 75px;
-  line-height: 75px;
+  line-height: 7px;
   text-align: center;
   background-color: var(--white);
   border-radius: 50%;

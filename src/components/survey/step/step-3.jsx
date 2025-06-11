@@ -15,14 +15,7 @@ export default function Step3({ onNext, onBack }) {
         <div className="form-content pera-content">
           <div className="step-inner-content">
             <span className="step-no bottom-line">Step 3</span>
-            <div className="step-progress float-right">
-              <span>3 of 5 completed</span>
-              <div className="step-progress-bar">
-                <div className="progress">
-                  <div className="progress-bar" style={{ width: "40%" }}></div>
-                </div>
-              </div>
-            </div>
+
             <h2>What kind of services You Need</h2>
             <p>
               Tation argumentum et usu, dicit viderer evertitur te has. Eu

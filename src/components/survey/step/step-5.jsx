@@ -27,14 +27,7 @@ export default function Step5({ onBack }) {
         <div className="form-content pera-content">
           <div className="step-inner-content">
             <span className="step-no bottom-line">Step 5</span>
-            <div className="step-progress float-right">
-              <span>5 of 5 completed</span>
-              <div className="step-progress-bar">
-                <div className="progress">
-                  <div className="progress-bar" style={{ width: "100%" }}></div>
-                </div>
-              </div>
-            </div>
+
             <h2>Select Your Plan</h2>
             <p>
               Tation argumentum et usu, dicit viderer evertitur te has. Eu

@@ -37,14 +37,7 @@ export default function Step2({ onNext, onBack }) {
         <div className="form-content pera-content">
           <div className="step-inner-content">
             <span className="step-no bottom-line">Step 2</span>
-            <div className="step-progress float-right">
-              <span>2 of 5 completed</span>
-              <div className="step-progress-bar">
-                <div className="progress">
-                  <div className="progress-bar"></div>
-                </div>
-              </div>
-            </div>
+
             <h2>What kind of services you are quiz?</h2>
             <p>
               Tation argumentum et usu, dicit viderer evertitur te has. Eu

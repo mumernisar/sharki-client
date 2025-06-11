@@ -75,7 +75,10 @@ export default function Step1({ onNext }) {
           </li>
           <li>
             <span className="js-btn-next" title="NEXT" onClick={onNext}>
-              NEXT <i className="fa fa-arrow-right" />
+              <p>
+                {" "}
+                NEXT <i className="fa fa-arrow-right" />
+              </p>
             </span>
           </li>
         </ul>
